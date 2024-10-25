@@ -25,7 +25,7 @@ class RequestAttendee extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'email' => 'nullable|string|email|max:255',
-            'event_id' => 'nullable|integer|exists:events,id',
+            'event_id' => 'required|integer|exists:events,id',
         ];
     }
 }

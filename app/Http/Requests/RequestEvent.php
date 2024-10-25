@@ -26,7 +26,7 @@ class RequestEvent extends FormRequest
             'description' => 'nullable|string|max:500',
             'date' => 'required|date',
             'location' => 'nullable|string|max:255',
-            'category_id' => 'nullable|integer|exists:categories,id',
+            'category_id' => 'required|integer|exists:categories,id',
         ];
     }
 }

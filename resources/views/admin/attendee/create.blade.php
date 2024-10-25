@@ -52,10 +52,11 @@
                                     
                                 @endforeach
                               
-                                @error('event_id')
-                                <span class="text-red-600 text-sm">{{ $message }}</span>
-                            @enderror
+                          
                             </select>
+                            @error('event_id')
+                            <span class="text-red-600 text-sm">{{ $message }}</span>
+                        @enderror
                         </div>
 
                         <!-- Submit Button -->
